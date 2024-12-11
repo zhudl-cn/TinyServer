@@ -54,7 +54,7 @@
   }
   ```
 
-- 利用**epoll_event** 结构体的 **data** 字段的特性（union data 中的void* data），将TcpConnection对象与事件事件，当处理事件可以快速拿到TcpConnection对象，以提高性能
+- 利用**epoll_event** 结构体的 **data** 字段的特性（union data 中的void* ptr），将TcpConnection对象与事件事件，当处理事件可以快速拿到TcpConnection对象，以提高性能
 
 - 使用C++ 11的函数式编程，来实现回调机制
 
